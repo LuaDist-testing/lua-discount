@@ -1,23 +1,22 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="lua-discount"
-version="1.2.10-1"
+version="1.2.10.1-1"
 -- LuaDist source
 source = {
-  tag = "1.2.10-1",
+  tag = "1.2.10.1-1",
   url = "git://github.com/LuaDist-testing/lua-discount.git"
 }
 -- Original source
 -- source = {
---    url = "http://luaforge.net/frs/download.php/3738/lua-discount-1.2.10.tar.gz",
---    md5 = "fcd0b4343c676813d0a7ab5c2d8812a3"
+--    url = "http://luaforge.net/frs/download.php/3758/lua-discount-1.2.10.1.tar.gz",
+--    md5 = "7dc7055816dc755aacb48bfd5eb2eb5b"
 -- }
 description = {
    summary = "Binding to a fast C implementation of the Markdown text-to-html markup system",
    homepage = "http://asbradbury.org/projects/lua-discount/",
    license = "BSD"
 }
-supported_platforms = {"unix"}
 dependencies = {
    "lua >= 5.1"
 }
@@ -35,10 +34,10 @@ build = {
       }
    },
    platforms = {
-      linux = {
+      windows = {
          modules = {
             discount = {
-               defines = {"HAVE_FOPENCOOKIE"}
+               defines = {"WINDOWS"}
             }
          }
       }

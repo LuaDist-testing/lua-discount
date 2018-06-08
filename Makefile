@@ -1,5 +1,5 @@
 LIB_NAME= lua-discount
-VERSION= 1.2.10
+VERSION= 1.2.10.1
 
 # change these to reflect your Lua installation
 LUA= /usr
@@ -12,7 +12,7 @@ CC= gcc
 CFLAGS= $(INCS) $(WARN) -O2 -fPIC ${DEFS}
 WARN= -Wall
 INCS= -I$(LUAINC)
-DEFS = -DHAVE_FOPENCOOKIE
+DEFS = 
 
 DISCOUNT_OBJS = docheader.o \
 	dumptree.o \

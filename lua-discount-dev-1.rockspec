@@ -8,7 +8,6 @@ description = {
    homepage = "http://asbradbury.org/projects/lua-discount/",
    license = "BSD"
 }
-supported_platforms = {"unix"}
 dependencies = {
    "lua >= 5.1"
 }
@@ -26,10 +25,10 @@ build = {
       }
    },
    platforms = {
-      linux = {
+      windows = {
          modules = {
             discount = {
-               defines = {"HAVE_FOPENCOOKIE"}
+               defines = {"WINDOWS"}
             }
          }
       }
